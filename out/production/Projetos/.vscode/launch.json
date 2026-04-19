@@ -1,0 +1,244 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Desafio3",
+      "request": "launch",
+      "mainClass": "Desafios.Desafio3",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Desafio2",
+      "request": "launch",
+      "mainClass": "Desafios.Desafio2",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Desafio1",
+      "request": "launch",
+      "mainClass": "Desafios.Desafio1",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Quiz",
+      "request": "launch",
+      "mainClass": "parte21.Quiz.src.Quiz",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Quiz",
+      "request": "launch",
+      "mainClass": "Quiz",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Quiz",
+      "request": "launch",
+      "mainClass": "parte21.Quiz",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Cronometro",
+      "request": "launch",
+      "mainClass": "Cronometro",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Calculadora",
+      "request": "launch",
+      "mainClass": "Calculadora",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "MainApp",
+      "request": "launch",
+      "mainClass": "helloworldfx.MainApp",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "AlertExam",
+      "request": "launch",
+      "mainClass": "helloworldfx.AlertExam",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "MultiWindowsExam",
+      "request": "launch",
+      "mainClass": "helloworldfx.MultiWindowsExam",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "CSSStylingExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.CSSStylingExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "KeyboardMouseClickExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.KeyboardMouseClickExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "ButtonClickExam",
+      "request": "launch",
+      "mainClass": "helloworldfx.ButtonClickExam",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "ComboBoxListViewEx",
+      "request": "launch",
+      "mainClass": "helloworldfx.ComboBoxListViewEx",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "CheckBoxExam",
+      "request": "launch",
+      "mainClass": "helloworldfx.CheckBoxExam",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "CheckBox",
+      "request": "launch",
+      "mainClass": "helloworldfx.CheckBox",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "TextFieldAreaExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.TextFieldAreaExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "ButtonLabelExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.ButtonLabelExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "StackPaneExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.StackPaneExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "GridPaneExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.GridPaneExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "BorderPaneExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.BorderPaneExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "VBoxHBoxExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.VBoxHBoxExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "StageSceneExample",
+      "request": "launch",
+      "mainClass": "helloworldfx.StageSceneExample",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "helloworldfx.Main",
+      "projectName": "JAVA_77c1accd",
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "parte18.HelloWorldFx.src.helloworld.Main",
+      "projectName": "JAVA_77c1accd",
+      "preLaunchTask": "build-javafx-main",
+      "classPaths": [
+        "${workspaceFolder}/.vscode/bin-javafx"
+      ],
+      "vmArgs": "--module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Anotacoes",
+      "request": "launch",
+      "mainClass": "parte17.Anotacoes",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Regex",
+      "request": "launch",
+      "mainClass": "parte16.Regex",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Colecoes",
+      "request": "launch",
+      "mainClass": "pasta15.Colecoes",
+      "projectName": "JAVA_77c1accd"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
+}

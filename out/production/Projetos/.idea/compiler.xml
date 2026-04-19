@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/GridPaneExample.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/StageSceneExample.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/MultiWindowsExam.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/TextFieldAreaExample.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/ComboBoxListViewEx.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/CounterController.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/Main.java" />
+      <file url="file://$PROJECT_DIR$/parte19/Calculadora/src/Calculadora.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/StackPaneExample.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/ButtonClickExam.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/ButtonLabelExample.java" />
+      <file url="file://$PROJECT_DIR$/parte20/Cronometro/src/Cronometro.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/KeyboardMouseClickExample.java" />
+      <file url="file://$PROJECT_DIR$/parte21/Quiz/src/Quiz.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/AlertExam.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/CSSStylingExample.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/Controller.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/MainApp.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/CheckBoxExam.java" />
+      <file url="file://$PROJECT_DIR$/parte18/HelloWorldFx/src/helloworldfx/VBoxHBoxExample.java" />
+    </excludeFromCompile>
+  </component>
+</project>

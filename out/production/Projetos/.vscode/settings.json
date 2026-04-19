@@ -1,0 +1,14 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.fxml.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx-swt.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.media.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.graphics.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.swing.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.web.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.controls.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/javafx.base.jar",
+    "/Users/thunder/Downloads/javafx-sdk-21.0.11/lib/**/*.jar"
+  ]
+}

@@ -1,0 +1,7 @@
+#display {
+  -fx-font-size: 24px;
+  -fx-background-color: lightgray;
+  -fx-padding: 10px;
+  -fx-min-width: 1px;
+  -fx-border-color: #060606;
+}

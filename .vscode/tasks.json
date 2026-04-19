@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-javafx-main",
+      "type": "shell",
+      "command": "mkdir -p '${workspaceFolder}/.vscode/bin-javafx/parte18/HelloWorldFx/src/helloworld' && /Library/Java/JavaVirtualMachines/amazon-corretto-21.jdk/Contents/Home/bin/javac --module-path /Users/thunder/Downloads/javafx-sdk-21.0.11/lib --add-modules javafx.controls,javafx.fxml -d '${workspaceFolder}/.vscode/bin-javafx' '${workspaceFolder}/parte18/HelloWorldFx/src/helloworld/Main.java' '${workspaceFolder}/parte18/HelloWorldFx/src/helloworld/Controller.java' && cp '${workspaceFolder}/parte18/HelloWorldFx/src/helloworld/helloworldfx.fxml' '${workspaceFolder}/.vscode/bin-javafx/parte18/HelloWorldFx/src/helloworld/helloworldfx.fxml'",
+      "problemMatcher": [
+        "$javac"
+      ],
+      "group": "build"
+    }
+  ]
+}

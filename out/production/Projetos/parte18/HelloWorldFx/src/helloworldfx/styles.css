@@ -1,0 +1,13 @@
+.custom-label {
+  -fx-background-color: rgb(31, 56, 64);
+  -fx-text-fill: rgb(67, 67, 119);
+  -fx-font-size: 16px;
+}
+
+.button-label {
+  -fx-background-color: rgb(182, 55, 169);
+  -fx-text-fill: rgb(12, 12, 200);
+  -fx-font-size: 14px;
+  -fx-border-radius: 5px;
+  -fx-border-color: rgb(255, 0, 0);
+}
