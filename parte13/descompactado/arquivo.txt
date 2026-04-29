@@ -1,5 +1,0 @@
-Esté é um arquivo
-
-com texto
-
-que vai ser lido pelo java

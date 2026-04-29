@@ -1,3 +1,0 @@
-Escrevendo em arquivo com o bufferedwriter
-Escrevendo em arquivo 2 com o bufferedwriter
-testando append
