@@ -8,11 +8,14 @@ public class TelaPerfil extends JPanel {
 
 	public TelaPerfil() {
 		setLayout(new GridBagLayout());
-		setBackground(new Color(230,230,230));
+		setBackground(new Color(230, 230, 230));
 
 		GridBagConstraints gbc = new GridBagConstraints();
-		gbc.insets = new Insets(10,10,10,10);
+		gbc.insets = new Insets(10, 10, 10, 10);
 
 		JLabel lblTitulo = new JLabel("Acesse sua conta");
 	}
+
+	public void carregarPerfil(Usuario usuarioAtual) {}
+
 }

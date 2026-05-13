@@ -1,5 +1,13 @@
 package chat;
 
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import org.bson.types.Binary;
+
+import static com.mongodb.client.model.Filters.eq;
+
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,15 +18,21 @@ public class TelaLogin extends JPanel {
 	private JButton botaoCadastro;
 	private JPanel painelPrincipal;
 	private CardLayout controladorTelas;
+	private TelaListaChats telaListaChats;
 
-	public TelaLogin(JPanel painelPrincipal, CardLayout controladorTelas ) {
+
+	private MongoDatabase database;
+
+	public TelaLogin(JPanel painelPrincipal, CardLayout controladorTelas, MongoDatabase database, TelaListaChats telaListaChats) {
 		this.painelPrincipal = painelPrincipal;
 		this.controladorTelas = controladorTelas;
+		this.database = database;
+		this.telaListaChats = telaListaChats;
 		setLayout(new GridBagLayout());
-		setBackground(new Color(230,230,230));
+		setBackground(new Color(230, 230, 230));
 
 		GridBagConstraints gbc = new GridBagConstraints();
-		gbc.insets = new Insets(10,10,10,10);
+		gbc.insets = new Insets(10, 10, 10, 10);
 
 		JLabel labelTitulo = new JLabel("Acesse sua conta");
 		labelTitulo.setFont(new Font("Arial", Font.BOLD, 24));
@@ -76,5 +90,41 @@ public class TelaLogin extends JPanel {
 	}
 
 	private void fazerLogin(String email, String senha) {
+		MongoCollection<Document> users = database.getCollection("users");
+
+		Document encontrado = users.find(eq("email", email)).first();
+
+		if(encontrado == null) {
+			JOptionPane.showMessageDialog(this,
+							"Email não encontrado!",
+							"Erro de Login",
+							JOptionPane.ERROR_MESSAGE);
+			return;
+		}
+
+		String senhaBanco = encontrado.getString("senha");
+		if(senhaBanco == null || !senhaBanco.equals(senha)) {
+			JOptionPane.showMessageDialog(this,
+							"Senha incorreta!",
+							"Erro de Login",
+							JOptionPane.ERROR_MESSAGE);
+			return;
+		}
+
+		Usuario usuarioAtual = new Usuario(
+						encontrado.getObjectId("_id"),
+						encontrado.getString("nome"),
+						encontrado.getString("email"),
+						encontrado.getString("senha"),
+						(Binary) encontrado.get("fotoPerfilBytes"),
+						encontrado.getString("status"),
+						encontrado.getString("telefone")
+		);
+
+		controladorTelas.show(painelPrincipal, "lista");
+		telaListaChats.carregarChats();
+		telaListaChats.iniciarAtualizacao();
 	}
+
+
 }
