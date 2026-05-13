@@ -48,11 +48,11 @@ public class ChatApp extends JFrame {
 
 		painelPrincipal = new JPanel(controladorTelas);
 
-		telaLogin = new TelaLogin(painelPrincipal, controladorTelas, this.database, telaListaChats);
-		telaCadastro = new TelaCadastro(painelPrincipal, controladorTelas, this.database);
-		telaListaChats = new TelaListaChats(usuarioAtual, telaPerfil, controladorTelas, painelPrincipal, telaContatos);
 		telaPerfil = new TelaPerfil();
 		telaContatos = new TelaContatos();
+		telaListaChats = new TelaListaChats(usuarioAtual, telaPerfil, controladorTelas, painelPrincipal, telaContatos);
+		telaLogin = new TelaLogin(painelPrincipal, controladorTelas, this.database, telaListaChats);
+		telaCadastro = new TelaCadastro(painelPrincipal, controladorTelas, this.database);
 
 		painelPrincipal.add(telaLogin, "login");
 		painelPrincipal.add(telaCadastro, "cadastro");
@@ -132,7 +132,7 @@ public class ChatApp extends JFrame {
 	}
 
 	private static ImageIcon carregarImagemOuPadrao(byte[] bytes, int largura, int altura) {
-		if(bytes != null) {
+		if(bytes == null) {
 			return carregarImagemPadrao(largura, altura);
 		}
 		try {

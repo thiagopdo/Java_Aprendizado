@@ -121,6 +121,7 @@ public class TelaLogin extends JPanel {
 						encontrado.getString("telefone")
 		);
 
+		telaListaChats.setUsuarioAtual(usuarioAtual);
 		controladorTelas.show(painelPrincipal, "lista");
 		telaListaChats.carregarChats();
 		telaListaChats.iniciarAtualizacao();

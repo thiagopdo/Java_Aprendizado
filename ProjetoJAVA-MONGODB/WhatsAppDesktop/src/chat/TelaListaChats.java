@@ -59,7 +59,7 @@ public class TelaListaChats extends JPanel {
 		listaChats.setCellRenderer(new ChatApp.RenderizadorContato());
 		listaChats.setBackground(new Color(245, 245, 245));
 		listaChats.setOpaque(true);
-		
+
 		add(new JScrollPane(listaChats), BorderLayout.CENTER);
 
 		listaChats.addMouseListener(new MouseAdapter() {
@@ -107,6 +107,10 @@ public class TelaListaChats extends JPanel {
 	}
 
 	public void carregarChats() {
+	}
+
+	public void setUsuarioAtual(Usuario usuarioAtual) {
+		this.usuarioAtual = usuarioAtual;
 	}
 
 	public void iniciarAtualizacao() {
