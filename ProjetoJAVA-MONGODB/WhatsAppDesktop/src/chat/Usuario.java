@@ -12,9 +12,6 @@ public class Usuario {
 	public String status;
 	public String telefone;
 
-	private Usuario usuarioAtual;
-
-
 	public Usuario(Object id, String nome, String email, String senha, Binary fotoPerfilBytes, String status, String telefone) {
 		this.id = id;
 		this.nome = nome;

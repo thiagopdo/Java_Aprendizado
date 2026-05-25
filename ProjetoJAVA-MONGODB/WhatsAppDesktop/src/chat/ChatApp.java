@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class ChatApp extends JFrame {
 	private static MongoClient mongoClient;
-	private MongoDatabase database;
+	protected static MongoDatabase database;
 	private static final String CAMINHO_IMAGEM_PADRAO = "/Users/thiagopdo/Desktop/Projetos/ProjetoJAVA-MONGODB/WhatsAppDesktop/src/perfil/padrao.jpg";
 
 	public JPanel painelPrincipal;
@@ -48,11 +48,17 @@ public class ChatApp extends JFrame {
 
 		painelPrincipal = new JPanel(controladorTelas);
 
-		telaPerfil = new TelaPerfil();
-		telaContatos = new TelaContatos();
-		telaListaChats = new TelaListaChats(usuarioAtual, telaPerfil, controladorTelas, painelPrincipal, telaContatos);
-		telaLogin = new TelaLogin(painelPrincipal, controladorTelas, this.database, telaListaChats);
+		telaPerfil = new TelaPerfil(painelPrincipal, controladorTelas, database);
+		telaContatos = new TelaContatos(painelPrincipal, controladorTelas, usuarioAtual, null, database);
+		telaListaChats = new TelaListaChats(telaPerfil, controladorTelas, painelPrincipal, telaContatos, database, null);
+
+		telaListaChats.setTelaListaChats(telaListaChats);
+		telaContatos.setTelaListaChats(telaListaChats);
+		telaPerfil.setTelaListaChats(telaListaChats);
+
+		telaLogin = new TelaLogin(painelPrincipal, controladorTelas, database, telaListaChats, telaContatos);
 		telaCadastro = new TelaCadastro(painelPrincipal, controladorTelas, this.database);
+
 
 		painelPrincipal.add(telaLogin, "login");
 		painelPrincipal.add(telaCadastro, "cadastro");
@@ -71,7 +77,7 @@ public class ChatApp extends JFrame {
 		database = mongoClient.getDatabase("chatDB");
 	}
 
-	private class Mensagem {
+	protected static class Mensagem {
 		public String conteudo;
 		public String remetente;
 		public String tipo;
@@ -91,7 +97,7 @@ public class ChatApp extends JFrame {
 		}
 	}
 
-	private class EstiloMensagem {
+	protected class EstiloMensagem {
 		public int tamanhoFonte = 14;
 		public Color corFonte = Color.BLACK;
 		public double rotacoesGraus = 0;
@@ -131,8 +137,8 @@ public class ChatApp extends JFrame {
 		}
 	}
 
-	private static ImageIcon carregarImagemOuPadrao(byte[] bytes, int largura, int altura) {
-		if(bytes == null) {
+	protected static ImageIcon carregarImagemOuPadrao(byte[] bytes, int largura, int altura) {
+		if(bytes == null || bytes.length == 0) {
 			return carregarImagemPadrao(largura, altura);
 		}
 		try {

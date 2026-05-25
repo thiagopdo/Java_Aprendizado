@@ -19,15 +19,17 @@ public class TelaLogin extends JPanel {
 	private JPanel painelPrincipal;
 	private CardLayout controladorTelas;
 	private TelaListaChats telaListaChats;
+	private TelaContatos telaContatos;
 
 
 	private MongoDatabase database;
 
-	public TelaLogin(JPanel painelPrincipal, CardLayout controladorTelas, MongoDatabase database, TelaListaChats telaListaChats) {
+	public TelaLogin(JPanel painelPrincipal, CardLayout controladorTelas, MongoDatabase database, TelaListaChats telaListaChats, TelaContatos telaContatos) {
 		this.painelPrincipal = painelPrincipal;
 		this.controladorTelas = controladorTelas;
 		this.database = database;
 		this.telaListaChats = telaListaChats;
+		this.telaContatos = telaContatos;
 		setLayout(new GridBagLayout());
 		setBackground(new Color(230, 230, 230));
 
@@ -121,6 +123,7 @@ public class TelaLogin extends JPanel {
 						encontrado.getString("telefone")
 		);
 
+		telaContatos.setUsuarioAtual(usuarioAtual);
 		telaListaChats.setUsuarioAtual(usuarioAtual);
 		controladorTelas.show(painelPrincipal, "lista");
 		telaListaChats.carregarChats();
