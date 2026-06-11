@@ -8,7 +8,7 @@ public class PainelTabuleiro extends JPanel {
 	private static final int ESPACO = 2;
 	private static final Color COR_FUNDO = new Color(0, 128, 140);
 	private static final Color COR_PECA = Color.WHITE;
-	private static final Color COR_BORDA = new Color(160, 160, 160);
+	private static final Color COR_BORDA = new Color(2, 2, 2);
 	private static final Color COR_AZUL = new Color(30, 90, 200);
 	private static final Color COR_VERMELHO = new Color(200, 50, 50);
 
